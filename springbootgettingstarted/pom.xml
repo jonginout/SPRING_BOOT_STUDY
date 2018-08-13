@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.jonginout</groupId>
+    <artifactId>spring-boot-getting-started</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- 이프로젝트의 부모프로젝트를 spring-boot-starter-parent로 설정 -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <!--
+        이곳에 스프링 부트를 위해 필요한 의존성들이 이미 정의되어 있고
+        버젼들도 이미 정의 되어 있기 때문에 우리가 디펜던시를 가져올때 버젼을
+        정의하지 않아도 된다.
+        즉 우리가 직접 의존성 관리를 하지 않아도 되는게 많아지고
+        이 스프링부트스타터가 관리하는 디펜던시면 우리가 버젼도 직접 명시하지 않아도
+        알아서 관리해준다
+        하지만 스프링부트스타터가 관리하는 디펜던시가 아니거나 우리가 특별히 사용하고
+        싶은 버젼이 있다면 버젼을 명시해줘야 한다.
+        -->
+        <version>2.0.3.RELEASE</version>
+    </parent>
+
+    <!-- Add typical dependencies for a web application -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jonginout</groupId>
+            <artifactId>jongin-spring-boot-starter</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+    <!-- 빌드 플러그인 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>

@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.jonginout.HumanConfiguration
+
+# 설정 파일을 읽는다

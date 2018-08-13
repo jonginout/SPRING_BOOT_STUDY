@@ -1,0 +1,23 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.jonginout.HumanProperties",
+      "name": "human",
+      "type": "com.jonginout.HumanProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.jonginout.HumanProperties",
+      "defaultValue": 0,
+      "name": "human.age",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.jonginout.HumanProperties",
+      "name": "human.name",
+      "type": "java.lang.String"
+    }
+  ]
+}

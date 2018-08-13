@@ -1,0 +1,5 @@
+com\jonginout\Human.class
+com\jonginout\HumanConfiguration.class
+com\jonginout\HumanProperties.class
+META-INF\spring-autoconfigure-metadata.properties
+META-INF\spring-configuration-metadata.json
